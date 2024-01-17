@@ -1,99 +1,101 @@
 body {
-    text-align: center;
-    font-family: 'Happy Monkey', cursive;
-    background: linear-gradient(250.55deg, #FFED46 0%, #FF7EC7 100%);
-    color: #000000;
+  text-align: center;
+  font-family: "Happy Monkey", cursive;
+  background: linear-gradient(250.55deg, #ffed46 0%, #ff7ec7 100%);
+  color: #000000;
 }
 
-h1, h2, h3, h4, p {
-    text-shadow: 0 0 1px black;
+h1,
+h2,
+h3,
+h4,
+p {
+  text-shadow: 0 0 1px black;
 }
 
 #bff-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 6px solid #F19AA1;
-    margin-bottom: 10px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 6px solid #f19aa1;
+  margin-bottom: 10px;
 }
 
 #bday-age {
-    background: #F19AA1;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin: 5px 0 10px 0;
+  background: #f19aa1;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 5px 0 10px 0;
 }
 
 #bday-date {
-    margin: 0;
-    background: #F19AA1;
-    padding: 5px 10px;
-    border-radius: 5px;
+  margin: 0;
+  background: #f19aa1;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
 #header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .gift-section {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .gift-title {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .gift-hint {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 #gift-img-cheers {
-    height: 200px;
+  height: 200px;
 }
 
 .gift-img {
-    margin: 20px auto;
-    max-width: 400px;
-    height: 400px;
-    border: 6px solid #F19AA1;
-    border-radius: 10px;
-    background-image: url("images/gift-cover.jpg");
-    background-size: cover;
+  margin: 20px auto;
+  max-width: 400px;
+  height: 400px;
+  border: 6px solid #f19aa1;
+  border-radius: 10px;
+  background-image: url("images/gift-cover.jpg");
+  background-size: cover;
 }
 
 #gift-img-happy:hover {
-    background-image: url("images/Happy-Lisa.gif");
-     max-width: 70%;
+  background-image: url("images/Happy-Lisa.gif");
 }
 
 #gift-img-hot:hover {
-    background-image: url("images/omg-lisa.gif");
+  background-image: url("images/omg-lisa.gif");
 }
 
 #gift-img-genius:hover {
-    background-image: url("images/smart-lisa.gif");
-    max-width: 70%;
+  background-image: url("images/smart-lisa.gif");
+  max-width: 60%;
 }
 
 #gift-img-badass:hover {
-    background-image: url("images/badass-lisa.gif");
+  background-image: url("images/badass-lisa.gif");
 }
 
 #gift-img-cheers:hover {
-    background-image: url("images/Cheers-bp.gif");
-     
+  background-image: url("images/Cheers-bp.gif");
 }
 
 #footer {
-    font-style: italic;
-    width: 400px;
-    margin: 40px auto 20px;
+  font-style: italic;
+  width: 400px;
+  margin: 40px auto 20px;
 }
 
 a {
-    color: black;
+  color: black;
 }
 
 /* 
