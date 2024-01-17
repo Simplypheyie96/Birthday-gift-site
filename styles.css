@@ -1,7 +1,7 @@
 body {
   text-align: center;
-  font-family: "Happy Monkey", cursive;
-  background: linear-gradient(250.55deg, #ffed46 0%, #ff7ec7 100%);
+  font-family: "Satisfy", cursive;
+  background: linear-gradient(220.55deg, #ffed46 0%, #ff7ec7 100%);
   color: #000000;
 }
 
@@ -63,7 +63,7 @@ p {
   height: 400px;
   border: 6px solid #f19aa1;
   border-radius: 10px;
-  background-image: url("images/gift-cover.jpg");
+  background-image: url("images/gift-img.jpeg");
   background-size: cover;
 }
 
