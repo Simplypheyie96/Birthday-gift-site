@@ -58,6 +58,7 @@ p {
 }
 
 .gift-img {
+  position: relative;
   margin: 20px auto;
   max-width: 400px;
   height: 400px;
@@ -67,24 +68,40 @@ p {
   background-size: cover;
 }
 
-#gift-img-happy:hover {
-  background-image: url("images/Happy-Lisa.gif");
+#gift-img-happy:hover .loading-spinner,
+#gift-img-hot:hover .loading-spinner,
+#gift-img-genius:hover .loading-spinner,
+#gift-img-badass:hover .loading-spinner,
+#gift-img-cheers:hover .loading-spinner {
+  display: block;
 }
 
-#gift-img-hot:hover {
-  background-image: url("images/omg-lisa.gif");
-}
-
-#gift-img-genius:hover {
-  background-image: url("images/smart-lisa.gif");
-}
-
-#gift-img-badass:hover {
-  background-image: url("images/badass-lisa.gif");
-}
-
+#gift-img-happy:hover,
+#gift-img-hot:hover,
+#gift-img-genius:hover,
+#gift-img-badass:hover,
 #gift-img-cheers:hover {
-  background-image: url("images/Cheers-bp.gif");
+  background-image: var(--gif-url);
+}
+
+#gift-img-happy {
+  --gif-url: url("images/Happy-Lisa.gif");
+}
+
+#gift-img-hot {
+  --gif-url: url("images/omg-lisa.gif");
+}
+
+#gift-img-genius {
+  --gif-url: url("images/smart-lisa.gif");
+}
+
+#gift-img-badass {
+  --gif-url: url("images/badass-lisa.gif");
+}
+
+#gift-img-cheers {
+  --gif-url: url("images/Cheers-bp.gif");
 }
 
 #footer {
@@ -108,3 +125,38 @@ https://scrimba.com/learn/htmlandcss
 Text:
 Want to create your own Birthday GIFt site? Take this HTML & CSS course.
 */
+
+.loading-spinner {
+  display: none;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #f19aa1;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* Modify the loading spinner display logic */
+.gift-img:hover .loading-spinner {
+  display: block;
+}
+
+/* Add these new rules to hide the spinner once the background image loads */
+.gift-img.loaded .loading-spinner {
+  display: none !important;
+}
+
+/* Add JavaScript to handle the loading */
